@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Roboto', 'Segoe UI', Arial, sans-serif; background: #fafafa;">
+  <div class="container">
+    <aside class="sidebar ig-sidebar">
+      <div class="ig-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height:32px;vertical-align:middle;margin-right:8px;">
+        <span class="ig-logo-text">Instagram</span>
+      </div>
+      <a href="child_mode.html" class="child-mode-btn">Child Mode</a>
+      <nav class="nav">
+        <a href="#" class="nav-item active"><span class="icon"> <!-- Home SVG --> <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M9 21V9h6v12"/></svg></span><span class="nav-label">Home</span></a>
+        <a href="#" class="nav-item"><span class="icon"> <!-- Search SVG --> <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><span class="nav-label">Search</span></a>
+        <a href="#" class="nav-item"><span class="icon"> <!-- Explore SVG --> <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><span class="nav-label">Explore</span></a>
+        <a href="#" class="nav-item"><span class="icon"> <!-- Reels SVG --> <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M7 2v20"/><path d="M17 2v20"/><path d="M2 7h20"/><path d="M2 17h20"/></svg></span><span class="nav-label">Reels</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/></svg><span class="badge">5</span></span><span class="nav-label">Messages</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 1 1 6.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg><span class="dot"></span></span><span class="nav-label">Notifications</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg></span><span class="nav-label">Create</span></a>
+        <a href="#" class="nav-item"><span class="icon"><img src="https://picsum.photos/id/1005/32/32" alt="Profile" class="profile-icon"></span><span class="nav-label">Profile</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg></span><span class="nav-label">Meta AI</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg></span><span class="nav-label">AI Studio</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg><span class="badge">9+</span></span><span class="nav-label">Threads</span></a>
+        <a href="#" class="nav-item"><span class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></span><span class="nav-label">More</span></a>
+      </nav>
+    </aside>
+    <main class="feed ig-feed">
+      <div class="stories-card">
+        <div class="stories feed-scrollbar">
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1062/60/60" alt="anikae__0"></div><span class="story-username">anikae__0</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1005/60/60" alt="bilalghafil_" ></div><span class="story-username">bilalghafil_</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1012/60/60" alt="ar_memory_" ></div><span class="story-username">ar_memory_</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1027/60/60" alt="ramoguliyani"></div><span class="story-username">ramoguliyani</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1074/60/60" alt="thesipharish_"></div><span class="story-username">thesipharish_</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1025/60/60" alt="umarinjii"></div><span class="story-username">umarinjii</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1011/60/60" alt="devil_trader"></div><span class="story-username">devil_trader</span></div>
+          <div class="story ig-story"><div class="story-ring"><img src="https://picsum.photos/id/1003/60/60" alt="scdcschool"></div><span class="story-username">scdcschool</span></div>
+        </div>
+      </div>
+      <div class="ig-feed-center">
+        <div class="post ig-post">
+          <div class="post-header">
+            <img src="https://picsum.photos/id/1025/40/40" alt="knowledgedays">
+            <div>
+              <span class="username">knowledgedays</span>
+              <span class="post-time">• 2h</span>
+            </div>
+            <span class="post-menu">•••</span>
+          </div>
+          <img src="https://picsum.photos/id/1025/400/400" alt="Post content" class="post-img">
+          <div class="post-actions">
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span>
+            <span class="icon ig-action save"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 21 12 17 5 21 5 3 19 3 19 21"></polygon></svg></span>
+          </div>
+          <div class="post-caption"><span class="username ig-caption-username">knowledgedays</span> Learning is fun! 🧠✨</div>
+          <div class="post-comment-box">
+            <input type="text" placeholder="Add a comment..." />
+            <button class="ig-post-btn">Post</button>
+          </div>
+        </div>
+        
+        <div class="post ig-post">
+          <div class="post-header">
+            <img src="https://picsum.photos/id/1012/40/40" alt="traveler_diaries">
+            <div>
+              <span class="username">traveler_diaries</span>
+              <span class="post-time">• 5h</span>
+            </div>
+            <span class="post-menu">•••</span>
+          </div>
+          <img src="https://picsum.photos/id/1036/400/400" alt="Mountain landscape" class="post-img">
+          <div class="post-actions">
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span>
+            <span class="icon ig-action save"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 21 12 17 5 21 5 3 19 3 19 21"></polygon></svg></span>
+          </div>
+          <div class="post-caption"><span class="username ig-caption-username">traveler_diaries</span> The mountains are calling and I must go 🏔️ #adventure #hiking #naturelovers</div>
+          <div class="post-comment-box">
+            <input type="text" placeholder="Add a comment..." />
+            <button class="ig-post-btn">Post</button>
+          </div>
+        </div>
+        
+        <div class="post ig-post">
+          <div class="post-header">
+            <img src="https://picsum.photos/id/1062/40/40" alt="foodie_chronicles">
+            <div>
+              <span class="username">foodie_chronicles</span>
+              <span class="post-time">• 8h</span>
+            </div>
+            <span class="post-menu">•••</span>
+          </div>
+          <img src="https://picsum.photos/id/1080/400/400" alt="Delicious food" class="post-img">
+          <div class="post-actions">
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span>
+            <span class="icon ig-action save"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 21 12 17 5 21 5 3 19 3 19 21"></polygon></svg></span>
+          </div>
+          <div class="post-caption"><span class="username ig-caption-username">foodie_chronicles</span> Homemade pasta night! 🍝 Nothing beats fresh ingredients and good company. #foodporn #homecooking</div>
+          <div class="post-comment-box">
+            <input type="text" placeholder="Add a comment..." />
+            <button class="ig-post-btn">Post</button>
+          </div>
+        </div>
+        
+        <div class="post ig-post">
+          <div class="post-header">
+            <img src="https://picsum.photos/id/1074/40/40" alt="fitness_journey">
+            <div>
+              <span class="username">fitness_journey</span>
+              <span class="post-time">• 12h</span>
+            </div>
+            <span class="post-menu">•••</span>
+          </div>
+          <img src="https://picsum.photos/id/1011/400/400" alt="Workout session" class="post-img">
+          <div class="post-actions">
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path></svg></span>
+            <span class="icon ig-action"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span>
+            <span class="icon ig-action save"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 21 12 17 5 21 5 3 19 3 19 21"></polygon></svg></span>
+          </div>
+          <div class="post-caption"><span class="username ig-caption-username">fitness_journey</span> Day 30 of my fitness challenge! 💪 Progress is not always linear, but it's always worth it. #fitnessmotivation #healthylifestyle</div>
+          <div class="post-comment-box">
+            <input type="text" placeholder="Add a comment..." />
+            <button class="ig-post-btn">Post</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="right-panel ig-right-panel">
+      <div class="profile-preview">
+        <img src="https://picsum.photos/id/1005/56/56" alt="Current user">
+        <div>
+          <div class="username">khaled_chauss05</div>
+          <div class="desc">SXC</div>
+        </div>
+        <button class="switch-btn">Switch</button>
+      </div>
+      <div class="suggestions">
+        <div class="suggestions-title">Suggested for you <a href="#" class="see-all">See All</a></div>
+        <div class="suggestion">
+          <img src="https://picsum.photos/id/1012/36/36" alt="hamedamshan" class="suggestion-img">
+          <div class="suggestion-info">
+            <div class="suggestion-username">hamedamshan</div>
+            <div class="suggestion-reason">Followed by perfect_coating_88</div>
+          </div>
+          <button>Follow</button>
+        </div>
+        <div class="suggestion">
+          <img src="https://picsum.photos/id/1020/36/36" alt="india" class="suggestion-img">
+          <div class="suggestion-info">
+            <div class="suggestion-username">india</div>
+            <div class="suggestion-reason">Followed by saeed_kawazir</div>
+          </div>
+          <button>Follow</button>
+        </div>
+        <div class="suggestion">
+          <img src="https://picsum.photos/id/1027/36/36" alt="updates_genie" class="suggestion-img">
+          <div class="suggestion-info">
+            <div class="suggestion-username">updates_genie</div>
+            <div class="suggestion-reason">Suggested for you</div>
+          </div>
+          <button>Follow</button>
+        </div>
+        <div class="suggestion">
+          <img src="https://picsum.photos/id/1025/36/36" alt="mujahid.sir32" class="suggestion-img">
+          <div class="suggestion-info">
+            <div class="suggestion-username">mujahid.sir32</div>
+            <div class="suggestion-reason">Followed by shahidqureshi_345</div>
+          </div>
+          <button>Follow</button>
+        </div>
+        <div class="suggestion">
+          <img src="https://picsum.photos/id/1074/36/36" alt="muscle_mehta" class="suggestion-img">
+          <div class="suggestion-info">
+            <div class="suggestion-username">muscle_mehta</div>
+            <div class="suggestion-reason">Followed by r_a_khan_3376</div>
+          </div>
+          <button>Follow</button>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#">About</a> •
+          <a href="#">Help</a> •
+          <a href="#">Press</a> •
+          <a href="#">API</a> •
+          <a href="#">Jobs</a> •
+          <a href="#">Privacy</a> •
+          <a href="#">Terms</a> •
+          <a href="#">Locations</a> •
+          <a href="#">Language</a> •
+          <a href="#">Meta Verified</a>
+        </div>
+        <div class="footer-copyright">© 2023 INSTAGRAM FROM META</div>
+      </footer>
+    </aside>
+  </div>
+</body>
+</html> 
