@@ -3,6 +3,7 @@ body {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
   background: #f7f8fa;
   color: #222;
+  height: 100vh;
   overflow: hidden;
 }
 .container {
@@ -127,6 +128,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 220px; /* Same as sidebar width */
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  max-width: calc(100% - 220px);
+  z-index: 1;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.feed::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 .stories {
   display: flex;
@@ -299,6 +312,12 @@ body {
   overflow-y: auto;
   position: relative;
   max-width: calc(100% - 220px);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.child-feed::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 .child-post {
   background: #fff;
@@ -531,14 +550,151 @@ body, html {
   font-size: 0.9em;
   color: #bbb;
 }
+
+/* Media Queries */
 @media (max-width: 1200px) {
   .right-panel {
+    width: 240px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* General Layout */
+  body {
+    overflow: auto;
+  }
+  
+  .container {
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+  /* Sidebar - Normal Mode */
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    z-index: 100;
+    background: #fff;
+  }
+  
+  .child-mode .sidebar {
+    background: #fff8d6;
+  }
+  
+  .nav {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .nav-item {
+    padding: 8px;
+    margin: 0;
+  }
+  
+  .nav-label {
     display: none;
+  }
+  
+  .logo {
+    display: none;
+  }
+  
+  .normal-mode-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 101;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .normal-mode-link .nav-label {
+    display: none;
+  }
+  
+  /* Feed - Normal Mode */
+  .feed, .child-feed {
+    margin-left: 0;
+    margin-bottom: 60px; /* Space for bottom nav */
+    max-width: 100%;
+    padding: 16px;
+  }
+  
+  .post, .child-post {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    display: none; /* Hide on mobile */
+  }
+  
+  /* Child Mode Specific */
+  .sidebar-info-boxes {
+    display: none; /* Hide on mobile by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 99;
+    padding: 60px 16px 16px;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  /* Show info boxes when info button is clicked (to be implemented with JS) */
+  .show-info .sidebar-info-boxes {
+    display: flex;
+  }
+  
+  .info-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 12px;
+  }
+  
+  /* Child Mode Button */
+  .child-mode-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 101;
+    padding: 8px 12px;
+  }
+  
+  /* Stories Section */
+  .stories, .child-stories {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .story, .child-story {
+    min-width: 60px;
+    margin: 0 8px;
   }
 }
 
 .ig-sidebar {
-  width: 72px;
+  width: 220px;
   background: #fff;
   border-right: 1px solid #dbdbdb;
   display: flex;
@@ -549,6 +705,8 @@ body, html {
   position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
+  overflow-y: auto;
   z-index: 10;
 }
 .ig-logo {
@@ -641,13 +799,23 @@ body, html {
 }
 .ig-feed {
   flex: 1;
-  margin-left: 72px;
+  margin-left: 220px;
   margin-right: 320px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #fafafa;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  max-width: calc(100% - 540px); /* Sidebar + right panel width */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.ig-feed::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 .ig-feed-center {
   display: flex;
@@ -798,6 +966,7 @@ body, html {
   }
   .ig-feed {
     margin-left: 56px;
+    max-width: calc(100% - 56px);
   }
   .nav-label {
     display: none !important;
@@ -805,10 +974,25 @@ body, html {
 }
 @media (max-width: 700px) {
   .ig-sidebar {
-    display: none;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    z-index: 100;
+    border-top: 1px solid #dbdbdb;
+    border-right: none;
+    justify-content: space-around;
+    padding: 8px 0;
   }
   .ig-feed {
     margin-left: 0;
+    margin-bottom: 60px;
+    max-width: 100%;
+  }
+  .ig-logo {
+    display: none;
   }
 }
 
